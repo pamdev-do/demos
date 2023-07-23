@@ -1,0 +1,136 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Selector COmpuesto Descendente */
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+header h1 span{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Selector compuesto adyacente */
+h2 + p {
+    color: blueviolet;
+}
+
+/* Selector grupal */
+h1, p, article {
+    color:black
+}
+
+/* Propiedades de Texto */
+.txt{
+    color: deeppink;
+}
+
+.dashed{
+    text-decoration: dashed;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.dotted{
+    text-decoration: dotted;
+}
+
+.wavy{
+    text-decoration: wavy;
+}
+
+.none{
+    text-decoration: none;
+    text-transform: none;
+    font-variant: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.a-center{
+    text-align: center;
+}
+
+.a-right{
+    text-align: right;
+}
+
+.a-left{
+    text-align: left;
+}
+
+.a-justify{
+    text-align: justify;
+}
+
+.v-small-caps{
+    font-variant: small-caps;
+}
+
+/* FLEX */
+.parent {
+    display: flex;
+    height: 300px; /* Or whatever */
+  }
+  
+  .child {
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
+  }
+
+ 
+  .flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
